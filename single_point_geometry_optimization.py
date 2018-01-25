@@ -2,7 +2,7 @@ from ase.io import read
 from espresso import espresso
 from ase.optimize import QuasiNewton
 
-slab_ads=read('slab_ads.traj')
+slab_ads=read('Pt+CO.traj')
 slab_ads.calc=espresso(pw=450,
                        dw=4500,
                        kpts=(5,7,1),
